@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Web_App_Shop_V1.Service</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Implementation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web App Shop V1.Domain\Web App Shop V1.Domain.csproj" />
+    <ProjectReference Include="..\Web App Shop V1.DAL\Web App Shop V1.DAL.csproj" />
+  </ItemGroup>
+</Project>

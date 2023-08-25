@@ -1,0 +1,28 @@
+﻿@model Web_App_Shop_V1.Domain.Models.Product
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div style="padding: 10px;"></div>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="https://www.paperseal.lt/media/wysiwyg/productimages/K312221_2.jpg"
+                 class="img-fluid rounded-start rounded" alt="@Model?.name">
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Model?.name</h5>
+                <small class="text-muted">ID: @Model?.id</small>
+                <p class="card-text"><b>Стоимость: </b>@Model?.price ₽</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <p class="card-text"><b>Описание: </b>@Model?.description</p>
+            </div>
+        </div>
+    </div>
+</div>
